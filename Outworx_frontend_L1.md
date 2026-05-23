@@ -298,3 +298,279 @@ Invalid:
 111. How would you approach development using AI tools?
 112. How do you handle conflicts in a team?
 113. Describe a challenging production bug you solved.
+
+114. 1. In which scenarios are `useCallback` and `useMemo` actually useful in React?
+
+2. Why is there no benefit in using `useCallback` or `useMemo` when dependencies change frequently?
+
+3. What problem do `useCallback` and `useMemo` solve in React applications?
+
+4. Why are `useCallback` and `useMemo` commonly used when passing props to child components?
+
+5. How does React compare primitive values versus objects/functions/arrays using strict equality (`===`)?
+
+6. What is reference equality in JavaScript?
+
+7. Why do objects, arrays, and functions with the same content still fail strict equality comparison?
+
+8. Why do functions get recreated on every render in React functional components?
+
+9. How does function reference change affect child component rendering?
+
+10. What role does `React.memo` play in preventing unnecessary re-renders?
+
+11. What is shallow comparison in React?
+
+12. Are React functional components pure components by default or non-pure components?
+
+13. What is a pure component in React?
+
+14. How can we convert a functional component into a pure component?
+
+15. What is the difference between `React.memo` and `PureComponent`?
+
+16. When does a child component wrapped with `React.memo` still re-render?
+
+17. Why does passing an object prop to a memoized child component still trigger re-rendering?
+
+18. How does `React.memo` compare object props internally?
+
+19. How can we control re-rendering behavior in `React.memo` using a custom comparison function?
+
+20. How can we make a child component re-render only when a specific property of an object changes?
+
+21. What is the purpose of the second argument in `React.memo`?
+
+22. What should the custom comparison function in `React.memo` return to skip or allow re-rendering?
+
+23. Why can overusing `useMemo` and `useCallback` sometimes hurt performance instead of improving it?
+# React / Redux Immutability & State Management Questions
+
+1. Why should we avoid mutating state directly in React or Redux?
+
+2. What is immutability in JavaScript?
+
+3. What is the difference between:
+
+   ```js
+   tasks.push(newTask)
+   ```
+
+   and
+
+   ```js
+   [...tasks, newTask]
+   ```
+
+4. Why does React prefer immutable updates?
+
+5. How does React detect state changes internally?
+
+6. What is shallow comparison in React?
+
+7. Why might React not re-render when using `push()` on a state array?
+
+8. What happens internally when the reference of an object or array does not change?
+
+9. Why do we use:
+
+   ```js
+   setTasks(prev => [...prev, newTask])
+   ```
+
+   instead of mutating the existing array?
+
+10. How does reference equality affect rendering in React?
+
+11. Explain:
+
+```js
+oldArray === newArray
+```
+
+12. What are mutable and immutable operations in JavaScript arrays?
+
+13. Which array methods mutate the original array?
+
+* push
+* pop
+* splice
+* shift
+* unshift
+* sort
+* reverse
+
+14. Which array methods return a new array?
+
+* map
+* filter
+* concat
+* slice
+* spread operator
+
+15. How does immutability help Redux?
+
+16. Why are Redux reducers expected to be pure functions?
+
+17. What problems can happen if Redux state is mutated directly?
+
+18. Why does Redux rely on immutable updates for performance optimization?
+
+19. How does React Redux detect state updates?
+
+20. Why can mutating state break:
+
+* `useEffect`
+* `useMemo`
+* `useCallback`
+* `React.memo`
+
+21. Explain how dependency arrays work in `useEffect`.
+
+22. Why may `useEffect` not trigger if state is mutated directly?
+
+23. How does `React.memo` use reference comparison?
+
+24. What is referential equality?
+
+25. What is the role of object references in JavaScript memory management?
+
+26. Why does creating a new object/array help React trigger re-rendering?
+
+27. What is the spread operator doing internally?
+
+28. What is structural sharing in immutable updates?
+
+29. What are the benefits of immutability?
+
+* predictable state
+* debugging
+* performance optimization
+* time-travel debugging
+
+30. Why is direct mutation considered an anti-pattern in React?
+
+31. How does Redux Toolkit allow writing mutating-looking code safely?
+
+32. What is [Immer](https://immerjs.github.io/immer/?utm_source=chatgpt.com) and how does it work?
+
+33. Why does this work in Redux Toolkit?
+
+```js
+state.tasks.push(newTask)
+```
+
+34. Difference between manual immutable updates and Immer-based updates.
+
+35. What is the connection between immutability and virtual DOM optimization?
+
+36. Can React always detect deep mutations inside objects?
+
+37. What are the performance implications of immutable state updates?
+
+38. Explain state mutation with a real-world UI rendering example.
+
+39. What is the difference between deep copy and shallow copy?
+
+40. When should we avoid unnecessary object recreation in React?
+## React / Frontend
+
+1. What is the difference between local state and global state?
+2. Which React hooks have you used in your project?
+3. Have you created custom hooks? What reusable hooks/functions did you build?
+4. What is the purpose of `useEffect` in functional components?
+5. What happens if a state variable is added in the dependency array and its setter is also called inside `useEffect`?
+6. What are the use cases of `useEffect`?
+7. What is the difference between `useCallback` and `useMemo`?
+8. What is the purpose of `React.memo`?
+9. If a parent component re-renders, will the child component also re-render?
+10. If a child component is wrapped with `React.memo`, will it still re-render when the parent re-renders?
+11. Why are `useCallback` and `useMemo` often used together with `React.memo`?
+12. How can you prevent unnecessary API calls during frequent re-rendering?
+13. How would you optimize performance in React applications with heavy re-rendering?
+
+---
+
+## Redux / State Management
+
+14. Since your project was using Redux and not Redux Toolkit, how were you managing state?
+15. What is the difference between traditional Redux and Redux Toolkit?
+16. Have you used RTK Query?
+17. How does Redux help avoid repeated API calls?
+18. How would you cache API responses in frontend applications?
+
+---
+
+## Caching / Performance
+
+19. On what basis would you choose between Redis, Node Cache, or LRU Cache?
+20. What are the advantages of Redis over in-memory caching?
+21. What are the use cases of LRU cache?
+22. How do you decide whether to use local cache or distributed cache?
+
+---
+
+## Architecture / Decision Making
+
+23. Were you part of the team that decided to use Reddit, or was it already implemented before you joined?
+24. What was the use case behind that technical decision?
+
+---
+
+## MongoDB / Database
+
+25. In what format is data stored in MongoDB?
+26. What is BSON in MongoDB?
+27. What is the maximum document size in MongoDB?
+28. What is GridFS and why is it used?
+29. What is the purpose of the `_id` field in MongoDB?
+30. Can we create custom `_id` values ourselves?
+31. Does MongoDB ensure uniqueness of `_id` values?
+32. Were you using `find()` queries or aggregation pipelines for fetching data?
+33. When would you use `find()` versus aggregation pipeline?
+34. Have you used `$group` in MongoDB aggregation?
+35. Have you used `$lookup` in MongoDB aggregation?
+36. What is `$unwind` in MongoDB aggregation pipeline?
+37. What are sharding and replication in MongoDB?
+38. What is the difference between sharding and replication?
+39. Have you used sparse index or partial index?
+40. What is a partial index in MongoDB?
+41. What is the difference between sparse index and partial index?
+
+1. Do you know about Event Loop queues/phases in Node.js? Which are those queues/phases?
+
+2. In case of Event Loop, can you explain the Poll phase?
+
+3. How does Node.js ensure that the single thread is not blocked while asynchronous tasks like API calls are running?
+
+4. What are some design patterns used in day-to-day development?
+
+5. Among callbacks, event-driven, streams, promises, and async-await, which one is most commonly used nowadays and why?
+
+6. Explain callback hell with an example.
+
+7. In callback hell, how are sequential/dependent operations handled?
+
+8. What happens if an intermediate API (like getOrders) fails in callback hell?
+
+9. What happens if we remove `async` from an async function? Does the function still behave asynchronously?
+
+10. What actually makes a function asynchronous in JavaScript/Node.js?
+
+11. Have you implemented anything specifically related to application security?
+
+12. How did you make the application/API more secure?
+
+13. Was login implemented using local authentication or OAuth 2.0/SSO?
+
+14. How was authentication/session handling managed after login?
+
+15. How does JWT-based authentication work?
+
+16. How is JWT authentication different from traditional session-based authentication?
+
+17. In JWT authentication, how does backend validate the user without checking the session database every time?
+
+18. Why is JWT called stateless authentication?
+
+
