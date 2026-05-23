@@ -1,0 +1,113 @@
+# Sapient L1 Frontend Interview Questions
+
+## Introduction & Experience
+
+1. Tell me about your day-to-day involvement at work and how your work is distributed.
+2. Do you have experience with client interactions, stakeholder management, and mentoring juniors?
+3. How do you follow design principles like SOLID and DRY in your projects?
+4. In the coding round, should we expect DSA-focused problems or frontend/JavaScript-based implementation problems?
+
+---
+
+# Coding & Problem Solving
+
+## Prime Number Problem
+
+5. Given an input array, how would you find all the prime numbers from the list?
+6. What is the optimized way to check whether a number is prime?
+
+## Combination Sum Problem
+
+7. Given an array, how would you find all possible combinations of numbers whose sum equals another number present in the same array?
+8. How would you store the combinations in an object structure where the target number is the key?
+9. How would you avoid duplicate combinations while solving the combinations problem?
+
+---
+
+# Frontend System Design – E-commerce Application
+
+## Architecture & Tech Stack
+
+10. How would you approach building an Amazon-like e-commerce product listing page?
+11. What frontend and backend tech stack would you choose for a scalable e-commerce application and why?
+12. How would you structure the folder architecture for a scalable frontend application?
+13. Which design patterns would you use in a React-based enterprise application?
+14. Would you follow Atomic Design or another component architecture approach?
+
+---
+
+# Rendering Strategies & SEO
+
+15. What rendering strategies would you use for an e-commerce listing page?
+16. What is SSR (Server-Side Rendering) and how does it work in React?
+17. How does hydration work in SSR?
+18. What are the differences between CSR, SSR, SSG, and ISR?
+19. When would you choose SSR over CSR?
+20. What are the SEO benefits of SSR?
+21. How would you implement SSR using React or Next.js?
+
+---
+
+# Styling & UI Architecture
+
+22. What are the pros and cons of using Tailwind CSS along with design libraries like Material UI or Bootstrap?
+23. How can multiple styling systems affect bundle size and maintainability?
+24. Would you choose Tailwind, Material UI, or a hybrid approach for a large-scale application?
+
+---
+
+# Micro Frontends & Scalability
+
+25. Do you think this e-commerce application requires micro frontends?
+26. When should we choose micro frontends over a modular monolith architecture?
+27. What are the challenges introduced by micro frontends?
+28. How would you design the architecture today so that it can be migrated to micro frontends in the future?
+29. How would you maintain clean boundaries between modules in a monolith application?
+30. How would Nx monorepo help in scaling frontend architecture?
+
+---
+
+# Reusable Components & Design Systems
+
+31. What would be your approach toward designing shared reusable components?
+32. When should a component variant become a separate component?
+33. What is your cutoff line for stopping over-generalization of reusable components?
+34. How do you prevent reusable components from becoming overly complex?
+35. What is the difference between presentation variants and business-specific behavior in components?
+
+---
+
+# Accessibility
+
+36. Have you worked with web accessibility?
+37. What accessibility practices are important in frontend development?
+38. What are ARIA attributes and why are they important?
+39. How would you ensure keyboard accessibility and screen-reader compatibility?
+
+---
+
+# AI-First Engineering Approach
+
+40. How would you use an AI-first approach while designing and developing an application like this?
+41. How would AI help in architecture planning and task breakdown?
+42. How would you divide this project into modules/tasks for different team members?
+43. How would you use AI during development, testing, and documentation?
+44. What precautions would you take while using AI-generated code?
+45. How would you balance AI assistance with engineering judgment?
+
+---
+
+# Key Focus Areas Observed in Sapient L1 Frontend Round
+
+* React fundamentals
+* Frontend architecture thinking
+* Rendering strategies (SSR/CSR)
+* SEO understanding
+* Scalable component design
+* Monolith vs Micro Frontend discussion
+* Performance optimization
+* Accessibility awareness
+* AI-assisted engineering mindset
+* Communication & collaboration skills
+* Problem-solving approach
+* Enterprise-scale frontend development thinking
