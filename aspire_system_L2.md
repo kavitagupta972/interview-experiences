@@ -407,3 +407,234 @@
 * What are risks of using AI-generated code?
 * How do you integrate AI into development workflow?
 
+* # Compiled Interview Questions
+
+## Event-Driven Architecture & Distributed Systems
+
+1. Look at the technical nuances of how it was implemented. What was your role inside it?
+
+2. Talk about some complex scenarios you implemented in event-driven architecture.
+
+3. What technology stack and architectural approach did you use for implementing event-driven architecture?
+
+4. How did your team handle failures in asynchronous workflows?
+
+5. How do you handle acknowledgement failures in event-driven architecture?
+
+6. If a message is picked up but not acknowledged back to the queue, how do you handle that situation?
+
+7. How do retries, visibility timeout, and DLQ work in event-driven systems?
+
+8. How do you prevent duplicate processing in event-driven architecture?
+
+9. How do you ensure eventual consistency across distributed services?
+
+10. How did you implement decentralized monitoring in distributed systems?
+
+11. Why did you choose Lambda for transaction-heavy systems?
+
+12. Why not use API Gateway policies instead of separate Lambda functions?
+
+13. What kind of dynamic business logic required a separate Lambda for cars?
+
+14. If car validations are static, why introduce Lambda at all?
+
+---
+
+# Backend / Node.js / REST API
+
+15. How do you optimize Node.js or Express APIs?
+
+16. How do you improve REST API performance?
+
+17. What performance optimization problems did you solve in your project?
+
+18. How do you optimize task evaluation in REST APIs?
+
+19. How do you handle long-running queries in PostgreSQL with Lambda limitations?
+
+20. How do you move heavy processing out of request-response lifecycle?
+
+21. How do you handle background processing in backend systems?
+
+22. What are the common causes of slow REST APIs?
+
+23. How do you optimize database-heavy APIs?
+
+24. How do you reduce event-loop blocking in Node.js?
+
+25. How do you use Promise.all for API optimization?
+
+26. How do caching strategies improve backend performance?
+
+---
+
+# Authentication & Security
+
+27. Can you elaborate on authentication implementation?
+
+28. How did you implement JWT authentication?
+
+29. How does token-based authentication work?
+
+30. How do you handle authorization and RBAC?
+
+31. How do refresh tokens work?
+
+32. Why use JWT over session-based authentication?
+
+---
+
+# React / Frontend Architecture
+
+33. How would you implement a stock trading application with real-time updates?
+
+34. How would you render 500+ stock tiles efficiently?
+
+35. How would you maintain UI performance under heavy real-time updates?
+
+36. What frontend architecture would you choose for asynchronous modules?
+
+37. How would you achieve rendering within 10ms for large dynamic UIs?
+
+38. What technology choices would you make for a highly dynamic dashboard?
+
+39. What optimizations would you implement in React for real-time systems?
+
+---
+
+# React 18 / React Fiber
+
+40. What features of React 18 did you use in your project?
+
+41. Why did you migrate to React 18?
+
+42. What is automatic batching in React 18?
+
+43. What is concurrent rendering?
+
+44. What is useTransition and where did you use it?
+
+45. What is React Fiber?
+
+46. How does React Fiber improve rendering performance?
+
+47. What problem did React Fiber solve?
+
+48. What is reconciliation in React?
+
+49. What are render phase and commit phase in React Fiber?
+
+50. How does React prioritize updates internally?
+
+---
+
+# Axios / API Communication
+
+51. What are Axios interceptors?
+
+52. What is the difference between request and response interceptors?
+
+53. How did you use Axios interceptors in your project?
+
+54. How do you handle token refresh using interceptors?
+
+55. How do you centralize API error handling?
+
+---
+
+# SDK Optimization & Performance Engineering
+
+56. Explain a complex scenario where you improved SDK performance.
+
+57. What bottlenecks did you identify in the SDK?
+
+58. How did you optimize websocket usage?
+
+59. How did you reduce unnecessary re-renders?
+
+60. How did you modularize the SDK?
+
+61. How did you fix memory leaks in frontend systems?
+
+62. How did you optimize bundle size?
+
+63. How did you optimize high-frequency UI updates?
+
+64. How did you improve frontend runtime performance?
+
+---
+
+# AI Tools / GitHub Copilot / Productivity
+
+65. How do you measure productivity improvement using AI tools like GitHub Copilot?
+
+66. What metrics did you use to measure productivity enhancement?
+
+67. What inputs did you provide to Copilot for unit test generation?
+
+68. Does Copilot use only code context or also user stories?
+
+69. How do you validate AI-generated unit tests against business requirements?
+
+70. If the implementation is addition but user story expects multiplication, how do you justify Copilot-generated tests?
+
+71. What are the limitations of AI-generated code/tests?
+
+72. How do you ensure engineering quality with AI-assisted development?
+
+---
+
+# React Coding / Autocomplete / Debouncing
+
+73. Implement an autocomplete/search suggestion component in React.
+
+74. How would you fetch and filter product data dynamically while typing?
+
+75. Should you fetch data on button click or during typing?
+
+76. How would you implement autocomplete using DummyJSON products API?
+
+77. How would you use useEffect to fetch products initially?
+
+78. How would you filter products locally using useState?
+
+79. Why is local filtering suitable for 500–1000 records?
+
+80. When should filtering move to backend instead of frontend?
+
+81. What is debouncing?
+
+82. Why is debouncing important in autocomplete systems?
+
+83. How do you implement debounce in React?
+
+84. What is the difference between debounce and throttle?
+
+85. How do you avoid unnecessary API calls during typing?
+
+86. How do you cancel previous API requests in autocomplete systems?
+
+87. How do you optimize rendering in large search result lists?
+
+---
+
+# General Architecture / System Design
+
+88. How do you balance scalability versus overengineering?
+
+89. How do you decide whether logic belongs in API Gateway, Lambda, or backend services?
+
+90. How do you separate infrastructural concerns from business logic?
+
+91. How do you design resilient distributed systems?
+
+92. How do you improve observability in microservice architectures?
+
+93. How do you manage correlation IDs across services?
+
+94. How do you handle partial failures in distributed systems?
+
+95. What architectural tradeoffs do you consider while choosing serverless vs persistent services?
+
+
