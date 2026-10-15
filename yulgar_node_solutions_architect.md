@@ -99,6 +99,15 @@ I’ve grouped them by topic so you can clearly see the interview focus areas.
 
 46. What happens when you insert into a heavily indexed table?
 47. How do indexes impact write performance?
+<details>
+<summary><b>View Answer</b></summary>
+
+Indexes speed up read operations (like `SELECT`) by creating a pointer structure (such as a B-tree), but they slow down write operations (`INSERT`, `UPDATE`, `DELETE`). 
+
+Every time you write new data or modify existing records, the database must not only update the base table but also recalculate and insert keys into **every associated index**. This introduces additional disk I/O, lock contention, and storage overhead.
+
+</details>
+
 48. How do you scale large transaction tables?
 
 ---
@@ -209,28 +218,27 @@ This was the most important section.
 
 They were checking:
 
-* Real backend depth
-* Cloud networking knowledge
-* Production-grade infra understanding
-* Distributed systems fundamentals
-* Database scaling knowledge
-* Payment-grade reliability
-* Knowledge beyond “I used EKS”
-* Event-driven systems understanding
+- Real backend depth
+- Cloud networking knowledge
+- Production-grade infra understanding
+- Distributed systems fundamentals
+- Database scaling knowledge
+- Payment-grade reliability
+- Knowledge beyond “I used EKS”
+- Event-driven systems understanding
 
 You were strongest in:
 
-* Search architecture
-* OpenSearch
-* Microservices basics
-* CI/CD basics
+- Search architecture
+- OpenSearch
+- Microservices basics
+- CI/CD basics
 
 You were weak in:
 
-* Networking (API Gateway → ALB → EKS)
-* SSL termination
-* Distributed transactions
-* DB internals
-* High-scale RPS infra estimation
-* Event-driven patterns (Kafka/Kinesis depth)
-
+- Networking (API Gateway → ALB → EKS)
+- SSL termination
+- Distributed transactions
+- DB internals
+- High-scale RPS infra estimation
+- Event-driven patterns (Kafka/Kinesis depth)
